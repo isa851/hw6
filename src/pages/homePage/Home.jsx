@@ -1,8 +1,10 @@
+import { Banner, NewArrivals } from "../../widgets";
 
 export const Home = () => {
     return (
-        <div className="container">
-            <h1>home page</h1>
+        <div>
+            <Banner />
+            <NewArrivals />
         </div>
     );
 }

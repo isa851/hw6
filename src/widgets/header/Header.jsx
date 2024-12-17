@@ -6,13 +6,12 @@ export const Header = () => {
         <header className='header'>
             <div className='container'>
                 <nav className='links'>
-                    <Link to={'/'}><li>Home</li></Link>
-                    <Link to={'/detail'}><li>Detail</li></Link>
-                    <Link to={'/category'}><li>Category</li></Link>
-                    <Link to={'/cart'}><li>Cart</li></Link>
+                    <Link to={'/'}><p>Home</p></Link>
+                    <Link to={'/detail'}><p>Detail</p></Link>
+                    <Link to={'/category'}><p>Category</p></Link>
+                    <Link to={'/cart'}><p>Cart</p></Link>
                 </nav>
             </div>
-            
         </header>
     );
 }

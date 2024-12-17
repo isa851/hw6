@@ -1,0 +1,80 @@
+.bannerCont{
+    position: relative;
+    height: 663px;
+    width: 100%;
+}
+
+.bannerImg{
+    position: absolute;
+    width: 100%;
+    height: 663px;
+    object-fit: cover;
+}
+
+.textCont{
+    position: absolute;
+    width: 596px;
+    margin: 103px 100px;
+}
+
+.textCont h2{
+    font-family: 'Integral CF Regular';
+    font-weight: 700;
+    font-size: 64px;
+    margin-bottom: 32px;
+    line-height: 64px;
+}
+
+.textCont p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 32px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.textCont .shopBtn{
+    border: 1px solid transparent;
+    background-color: black;
+    border-radius: 62px;
+    color: white;
+    padding: 15px 67px;
+    transition: .3s all;
+    margin-bottom: 48px;
+}
+
+.shopBtn:hover{
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+}
+
+.flexItem{
+    display: flex;
+    width: 100%;
+}
+
+.flexItem h3{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 54px;
+}
+
+.flexItem p{
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.flexItem .firstItem{
+    padding-right: 32px;
+}
+
+.flexItem .secondItem{
+    padding: 0 32px;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.flexItem .thirdItem{
+    padding-left: 32px;
+}
