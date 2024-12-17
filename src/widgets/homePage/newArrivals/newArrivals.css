@@ -1,0 +1,17 @@
+.arrivalsCont{
+    width: 100%;
+}
+
+.arrivalsCont h2{
+    text-align: center;
+    margin: 72px 0 55px 0;
+    font-family: 'Integral CF Regular';
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57px;
+}
+
+.arrivalsCont .flexItem{
+    display: flex;
+    gap: 20px;
+}
