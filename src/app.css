@@ -71,3 +71,8 @@ html{
 .detailTitle svg{
     margin: 0 14px;
 }
+
+.flexCont{
+    display: flex;
+    gap: 20px;
+}
