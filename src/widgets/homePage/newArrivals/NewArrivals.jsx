@@ -13,6 +13,10 @@ export const NewArrivals = () => {
                     <Card />
                 </div>
             </div>
+
+            <div className='button'>
+                <button>View All</button>
+            </div>
         </div>
     );
 }

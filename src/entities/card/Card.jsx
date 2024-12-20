@@ -4,21 +4,27 @@ import ReactStars from 'react-stars';
 
 export const Card = () => {
     return (
-        <div className='cardCont'>
-            <div className='imgCont'>
-                <img src={prod} alt="" />
+        <div className="product">
+            <div className="item">
+                <img className="image" src={prod} alt="Product img" />
             </div>
-            <h3>T-SHIRT WITH TAPE DETAILS</h3>
-            <ReactStars
-                count={5}
-                value={4.5}  
-                isHalf={true}          
-                size={18}       
-                edit={false}    
-                activeColor="#ffd700" 
-                inactiveColor="#ffffff"
-            />
-            <h3>$120</h3>
+            <div className="description">
+                <h3>T-SHIRT WITH TAPE DETAILS</h3>
+                <div className="rating">
+                    <ReactStars
+                        count={5}
+                        value={4.5}  
+                        isHalf={true}          
+                        size={18}       
+                        edit={false}    
+                        activeColor="#ffd700" 
+                        inactiveColor="#ffffff"
+                    />
+                    <p>{4.5}/5</p>
+                </div>
+                
+                <h3>${500}</h3>
+            </div>
         </div>
     );
 }
