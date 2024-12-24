@@ -1,11 +1,11 @@
 import ReactStars from 'react-stars';
 import './infoProduct.css'
 
-export const InfoProduct = () => {
+export const InfoProduct = ({product}) => {
     return (
         <div>
             <div className="productInfo">
-                <h2>T-SHIRT WITH TAPE DETAILS</h2>
+                <h2>{product?.title}</h2>
                 <div className="rating">
                     <ReactStars
                         count={5}
@@ -18,7 +18,8 @@ export const InfoProduct = () => {
                     />
                     <p>4.5/5</p>
                 </div>
-                <h3>$500</h3>
+                <h3>${product?.price}</h3>
+                <p>{product?.description}</p>
             </div>
         </div>
     );

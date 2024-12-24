@@ -1,6 +1,8 @@
 import './photoSection.css';
 
 export const PhotoSection = ({ product }) => {
+    console.log(product);
+    
     return (
         <div className='photoCont'>
             {
@@ -9,17 +11,17 @@ export const PhotoSection = ({ product }) => {
                     <div className='photoFlex'>
                         <div className='images'>
                             <div>
-                                <img src={product.image} alt="" />     
+                                <img src={product?.images[0]} alt="" />     
                             </div>
                             <div>
-                                <img src={product.image} alt="" />     
+                                <img src={product?.images[0]} alt="" />     
                             </div>
                             <div>
-                                <img src={product.image} alt="" />     
+                                <img src={product?.images[0]} alt="" />     
                             </div>   
                         </div>
                         <div className='mainImg'>
-                            <img src={product.image} alt="" />     
+                            <img src={product?.images[0]} alt="" />     
                         </div>
                     </div>
                 )
