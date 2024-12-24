@@ -7,7 +7,7 @@ export const Category = () => {
     const [product, setProduct] = useState();
 
     useEffect(() => {
-        axios('https://fakestoreapi.com/products')
+        axios('https://api.escuelajs.co/api/v1/products')
         .then(({data}) => {
             setProduct(data);
         })
