@@ -1,8 +1,13 @@
+import { CartProduct, OrderSum } from "../../widgets";
 
 export const Cart = () => {
     return (
         <div>
-            <h1>Cart</h1>
+            <div className="container">
+                <h2>Your cart</h2>
+                <CartProduct />
+                <OrderSum />
+            </div>
         </div>
     );
 }

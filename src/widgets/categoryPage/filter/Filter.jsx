@@ -5,7 +5,7 @@ import 'rc-slider/assets/index.css';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 
-export const Filter = ({priceRange, setPrice, setSelect, filterProducts}) => {
+export const Filter = ({priceRange, setPrice, setSelect, filterProducts, select}) => {
 
     const [categories, setCategories] = useState();
 
@@ -25,7 +25,6 @@ export const Filter = ({priceRange, setPrice, setSelect, filterProducts}) => {
             <div className='category'>
                 <input className='input' type='radio' value='all' id='all' name="category" />
                 <label onClick={() => setSelect('all')} htmlFor='all'>all</label>
-                
                 {
                     categories && 
                     categories.map((category) => (
@@ -35,7 +34,7 @@ export const Filter = ({priceRange, setPrice, setSelect, filterProducts}) => {
                                 name="category" 
                                 value={category.name} 
                                 id={category.id} 
-                            />
+                                />
                             <label 
                                 onClick={() => setSelect(category.name)} 
                                 htmlFor={category.id}
@@ -46,8 +45,6 @@ export const Filter = ({priceRange, setPrice, setSelect, filterProducts}) => {
                     ))
 
                 }
-                
-                 
             </div>
 
             <div className='price'>
