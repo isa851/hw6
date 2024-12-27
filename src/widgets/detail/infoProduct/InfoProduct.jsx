@@ -20,6 +20,7 @@ export const InfoProduct = ({product}) => {
                 </div>
                 <h3>${product?.price}</h3>
                 <p>{product?.description}</p>
+                <button className='Button'>BUY</button>
             </div>
         </div>
     );
