@@ -3,7 +3,7 @@ import { InfoProduct, PhotoSection } from "../../widgets";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 
-export const Detail = () => {
+export const Detail = ({addCart}) => {
 
     const [product, setProduct] = useState();
     const {id} = useParams();
@@ -23,7 +23,7 @@ export const Detail = () => {
             </h1>
             <div className="flexProduct">
                 <PhotoSection product={product} />
-                <InfoProduct product={product} />
+                <InfoProduct product={product}  addCart={addCart}/>
             </div>
         </div>
     );

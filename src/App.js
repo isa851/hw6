@@ -6,7 +6,7 @@ import { useState } from 'react';
 
 function App() {
 
-  const [cartData, setCartData] = useState();
+  const [cartData, setCartData] = useState([]);
 
   const addCart = (obj) => {
     const idx = cartData.findIndex((item) =>{
@@ -23,6 +23,8 @@ function App() {
       setCartData([...cartData])
     }
   }
+  console.log(cartData);
+  
   return (
     <BrowserRouter>
       <Header />
@@ -31,7 +33,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/detail/:id' element={<Detail addCart={addCart} />} />
         <Route path='/category' element={<Category />}/>
-        <Route path='/cart' element={<Cart />} />
+        <Route path='/cart' element={<Cart cartData={cartData} setCartData={setCartData}/>} />
       </Routes>
 
       <Footer />
